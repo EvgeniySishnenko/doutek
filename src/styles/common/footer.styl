@@ -1,0 +1,48 @@
+.footer
+    min-width 375px
+    min-height 340px
+    height auto
+    margin-top 94px
+    padding 20px 0
+    background-color: footerBCG;
+.footer__list
+    display: flex
+    justify-content space-between
+    +adapt(1200px)
+        flex-wrap wrap
+    +adapt(560px)
+        display block
+.footer__item
+    margin-top 20px
+    +adapt(1200px)
+        width 50%
+     +adapt(560px)
+        width 100%
+        display flex
+        flex-direction column
+        align-items center
+.footer__link
+    display block
+    line-height 31px
+    font(ibm_R, 15px) 
+.footer__text
+    width 80%
+    white-space normal
+    line-height 20px
+    font(ibm_R, 15px, gray_text) 
+    +adapt(560px)
+        text-align center
+.footer__logo-brand
+    display flex
+    margin-top 10px
+    +adapt(826px)
+        display block
+.footer__pic
+    &:first-child
+        margin-right 5px
+
+
+.footer__social-svg
+    width 30px
+    height 30px
+    fill #DADADA

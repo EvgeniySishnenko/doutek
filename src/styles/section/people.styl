@@ -1,0 +1,133 @@
+ .date-title
+    background-color gray
+    padding 0 gap_mob 0
+    height 30px
+    border-radius 5px
+    line-height 22px
+    text-transform uppercase
+    font(ibm_R, 12px, gray_text)
+    display flex
+    align-items center    
+.people__item
+    min-height 130px
+    height auto
+    display flex
+    align-items center
+    border-bottom 1px solid gray
+    padding 0 gap 0 0
+    margin-top 10px
+    +adapt(800px)
+        flex-wrap wrap
+    +adapt(480px)
+        padding 0 gap_mob
+.people__date
+    display flex
+    +adapt(800px)
+        width 50%
+        order 1
+.people__date-num
+    line-height 25px
+    font(ibm_M, 50px)
+.people__date-wrap
+    margin-left 10px
+.people__date-month
+    line-height 10px
+    font(ibm_R, 15px)
+.people__date-time
+    line-height: 22px;
+    font(ibm_R, 15px)
+    margin-top 5px
+    +adapt(480px)
+      font(ibm_R, 14px)  
+.people__date-matching
+    font(ibm_R, 13px, red)
+    +adapt(480px)
+        font(ibm_R, 12px, red)
+.people__date__svg
+    width 10px
+    height 10px
+    fill red
+    margin-right 3px
+    +adapt(480px)
+        width 9px
+        height 9px
+.people__data
+    display flex
+    margin-left gap
+    +adapt(800px)
+        width 100%
+        order 3
+        margin-left 0
+.people__data_pic-wrap
+    display inline-block
+    width 50px
+    height 50px
+.people__data_pic-img
+    display block
+.margin-left-minus
+    margin-left -30px
+.people__data_descr
+    margin-left 10px
+    +adapt(480px)
+        margin-left 5px
+.people__data_name
+    line-height 20px
+    font(ibm_M, 16px, blue)
+    +adapt(480px)
+        font(ibm_M, 14px, blue)
+.people__data_search
+    line-height: 20px;
+    font(ibm_M, 16px, red)
+    +adapt(480px)
+        font(ibm_M, 14px, red)
+.people__data_shrt-text
+    line-height 12px
+    font(ibm_R, 13px)
+    margin-top 5px
+    +adapt(992px)
+        span 
+            display none
+.people__options
+    margin-left auto
+    +adapt(800px)
+        width 50%
+        order 2
+        margin-left 0
+        text-align right
+
+.people__options_status 
+    line-height 22px
+    font(ibm_R, 15px)
+    vertical-align: middle
+    display inline-block
+    margin-right 10px
+.people__options_dot
+    display inline-block
+    vertical-align: middle
+    cursor pointer
+.vertical-align_margin-right
+    vertical-align: middle
+    margin-right 10px 
+.dot
+    width 4px
+    height 4px
+    border-radius 50%
+    background-color dark
+    margin-top 2px
+    &:first-child
+        margin-top 0
+.style-sircle
+    border-radius: 50%
+    border 2px solid lighten(gray_text, 80%)
+    position relative
+    background-color white
+.style-position
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+.style-red
+    .people__date-num,
+    .people__date-month,
+    .people__date-time
+        color red

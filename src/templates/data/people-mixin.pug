@@ -1,0 +1,50 @@
+include people-list.pug
+
+mixin people(item)
+    .date-title=item.month_title
+    ul.people__list
+        each val in item.item
+            li.people__item
+                if val.matching == true
+                    .people__date.style-red
+                        .people__date-num= val.num
+                        .people__date-wrap
+                            .people__date-month= val.month
+                            .people__date-time= val.time
+                            .people__date-matching
+                                svg.people__date__svg
+                                    use(xlink:href="assets/sprite/sprite.svg#time")
+                                |Согласование
+                else
+                    .people__date
+                        .people__date-num= val.num
+                        .people__date-wrap
+                            .people__date-month= val.month
+                            .people__date-time= val.time
+                .people__data
+                    .people__data_pic
+                        .people__data_pic-wrap
+                            img(src="assets/images/"+val.src_country+"" alt="" title="" class="people__data_pic-img")
+                        if val.svg == false
+                            .people__data_pic-wrap.margin-left-minus
+                                img(src="assets/images/"+val.src_pic+"" alt="" title="" class="people__data_pic-img")
+                        else
+                            .people__data_pic-wrap.margin-left-minus.style-sircle
+                                img(src="assets/images/"+val.src_pic+"" alt="" title="" class="people__data_pic-img style-position")
+                    .people__data_descr
+                        if val.search == false
+                            .people__data_name=val.name
+                        else
+                            .people__data_search=val.name 
+                        .people__data_shrt-text!=val.descr
+                .people__options
+                    .people__options_status= val.status
+                    .people__data_pic-wrap.vertical-align_margin-right
+                        if val.flag == 2 
+                            img(src="assets/images/"+val.src_country2+"" alt="" title="" class="people__data_pic-img")
+                        else if val.flag == 1
+                            img(src="assets/images/"+val.src_country+"" alt="" title="" class="people__data_pic-img")
+                    .people__options_dot
+                        .dot
+                        .dot
+                        .dot

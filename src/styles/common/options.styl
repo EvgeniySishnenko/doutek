@@ -1,0 +1,81 @@
+.options
+    padding 50px 0
+    +adapt(480px)
+        padding 50px 0 25px 0
+.container__options
+    display flex
+    +adapt(700px)
+        flex-direction column
+        align-items center
+        justify-content center
+.calendar
+    width 40%
+    display flex
+    +adapt(800px)
+        width 50%
+    +adapt(700px)
+        width 100%
+        justify-content center
+    +adapt(480px)
+        justify-content space-between
+.calendar__srt-text
+    font(ibm_R, 35px, dark)
+    line-height 40px
+    margin-right 30px
+    +adapt(700px)
+        margin-right 50px
+    +adapt(480px)
+        margin-right 0
+        font(ibm_R, 30px, dark)
+.calendar__icon
+    width 40px
+    height 40px
+    background-color gray
+    border-radius 10px 
+    padding 10px
+.wrap-square
+    display flex
+    &:last-child
+        margin-top 2px
+.square
+    width 10px
+    height 10px
+    background-color blue
+    border-radius 3px
+    &:first-child
+        margin-right 2px
+.tabs
+    width 40%
+    height 40px
+    +adapt(800px)
+        width 50%
+    +adapt(700px)
+        width 100%
+        margin-top 15px
+.tabs_list
+    display flex
+    height 100%
+    +adapt(700px)
+        justify-content center
+.tabs__item
+    display flex
+    justify-content center
+    align-items center
+    width 115px
+    height 100%
+    background-color gray 
+    font(ibm_R, 15px, gray_text) 
+    line-height 20px
+    cursor pointer
+    tran()
+    &:first-child
+        border-top-left-radius 10px
+        border-bottom-left-radius 10px
+    &:last-child
+        border-top-right-radius 10px
+        border-bottom-right-radius 10px
+    +adapt(480px)
+        width 33%
+.tabs__item-active
+    background-color blue
+    color white

@@ -1,0 +1,54 @@
+.wrapper 
+    width 100%
+    min-height 600px
+    height 100%
+    position relative
+
+.maincontent 
+    height 100%
+    position relative
+
+.section 
+    width 100%
+    height auto
+    position relative
+.container 
+    margin 0 auto
+    max-width: 1200px
+    +adapt(1200px)
+        max-width: 992px
+        width 100% 
+        padding 0 gap
+    +adapt(992px)
+        max-width: 992px
+        width 100% 
+        
+    +adapt(768px)
+        max-width: 768px
+        width 100% 
+        
+    +adapt(480px)
+        max-width: 480px
+        width 100% 
+        padding 0 gap_mob
+    +adapt(375px)
+        min-width 375px
+.container_full
+    margin 0 auto
+    max-width: 1200px
+    +adapt(1200px)
+        max-width: 992px
+        width 100% 
+        padding 0 gap
+    +adapt(992px)
+        max-width: 992px
+        width 100%    
+    +adapt(768px)
+        max-width: 768px
+        width 100% 
+    +adapt(480px)
+        max-width: 480px
+        width 100% 
+        padding 0
+    +adapt(375px)
+        min-width 375px

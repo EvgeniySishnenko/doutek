@@ -1,0 +1,31 @@
+header.header
+    .container.container_header
+        .logo
+            a.logo__link(href="")
+                img(src="assets/images/logo.png")
+        .menu
+            ul.menu__list
+                include ../data/menu-mixin.pug
+                for item in menuList
+                    +menu(item)
+        .menu__mobile-btn
+            .mobile-btn__line1
+            .mobile-btn__line2 
+            .mobile-btn__line3  
+        .header__user-auth
+            .header__user-pic
+                img(src="assets/images/head-pic.png" class="header__user-img" alt="" title="")
+            .header__user
+                .header__user-name Екатерина М.
+                ul.header__user__list
+                    li.header__user__item 
+                        span.header__user__num 52
+                        svg.header__user__svg
+                            use(xlink:href="assets/sprite/sprite.svg#Q")
+                    li.header__user__item
+                        span.header__user__num 2394
+                        | $
+                    
+
+
+

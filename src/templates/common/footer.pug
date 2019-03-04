@@ -1,0 +1,30 @@
+footer.footer
+    .container
+        .footer__list
+            .footer__item
+                    .logo
+                        a.logo__link(href="")
+                            img(src="assets/images/footerLogo.png")
+            .footer__item
+                    include ../data/footer-menu.pug
+                        for item in footerMenu
+                            a(href="#").footer__link=item.item
+
+            .footer__item
+                    .footer__text Скачайте приложение и получите приветственный бонус!
+                    .footer__logo-brand
+                        .footer__pic
+                            img(src="assets/images/app-store-badge.png" class="footer__pic-img")
+                        .footer__pic
+                            img(src="assets/images/google-play-badge.png" class="footer__pic-img")
+            .footer__item
+                .wrap__footer__link
+                    a(href="#").footer__social__link
+                        svg.footer__social-svg
+                            use(xlink:href="assets/sprite/sprite.svg#fs")
+                    a(href="#").footer__social__link
+                        svg.footer__social-svg
+                            use(xlink:href="assets/sprite/sprite.svg#vk")
+                    a(href="#").footer__social__link
+                        svg.footer__social-svg
+                            use(xlink:href="assets/sprite/sprite.svg#in")
